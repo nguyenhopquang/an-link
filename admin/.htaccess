@@ -1,0 +1,6 @@
+RewriteRule ^main/?$ [admin]center.php [L]
+RewriteRule ^delete/?$ delete_url.php [L]
+RewriteRule ^action/?$ action.php [L]
+
+# Error Document
+ErrorDocument 403 /error/403.php
