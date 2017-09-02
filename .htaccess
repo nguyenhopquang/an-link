@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteRule ^logout/?$ logout.php [L]
+RewriteRule ^url/?$ s_url.php [L]
+RewriteRule ^url/(.*)/?$ s_url.php?s=$1 [QSA,L]
+
+# Error Document
+ErrorDocument 404 /404.php
